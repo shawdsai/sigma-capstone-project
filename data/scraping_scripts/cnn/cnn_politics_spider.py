@@ -34,6 +34,7 @@ class CnnPoliticsSpider(CrawlSpider):
             "Chrome/109.0.0.0 Safari/537.36"
         ),
         "HTTPERROR_ALLOWED_CODES": [451],
+        "FEED_EXPORT_ENCODING": "utf-8",
     }
 
     rules = (
