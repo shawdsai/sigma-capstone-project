@@ -1,8 +1,9 @@
 # Run: scrapy runspider nyt_politics_spider.py -o ../../raw/nyt/urls.json
+import re
+
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
-import re
 
 
 def set_priority(request, spider):
