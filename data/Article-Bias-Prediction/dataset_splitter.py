@@ -3,6 +3,7 @@ import json
 import os
 
 import pandas as pd
+from loguru import logger
 
 
 def load_json_files(folder_path):
@@ -11,9 +12,12 @@ def load_json_files(folder_path):
     for filename in os.listdir(folder_path):
         if filename.endswith(".json"):
             file_path = os.path.join(folder_path, filename)
-            with open(file_path, "r", encoding="utf-8") as file:
-                data = json.load(file)
-                data_list.append(data)
+            try:
+                with open(file_path, "r", encoding="utf-8") as file:
+                    data = json.load(file)
+                    data_list.append(data)
+            except Exception as e:
+                logger.warning(f"Failed to load '{file_path}': {e}")
     return data_list
 
 
@@ -26,15 +30,18 @@ def train_test_split(df, train_ratio=0.8, seed=None):
 
 def main(folder_path="jsons", output_prefix="article-bias-detection", subsample=None, train_ratio=0.8, seed=None):
     """Load JSON files, optionally subsample, split into train-test, and save as CSV."""
+    logger.info(f"Loading JSON files from folder: {folder_path}")
     data_list = load_json_files(folder_path)
 
     if not data_list:
-        print("No data found. Exiting.")
+        logger.error("No data found. Exiting.")
         return
 
     df = pd.DataFrame(data_list)
+    logger.info(f"Loaded {len(df)} records.")
 
     if subsample is not None and 0 < subsample < len(df):
+        logger.info(f"Subsampling to {subsample} records.")
         df = df.sample(n=subsample, random_state=seed)
 
     train_df, test_df = train_test_split(df, train_ratio, seed)
@@ -45,9 +52,9 @@ def main(folder_path="jsons", output_prefix="article-bias-detection", subsample=
     train_df.to_csv(train_csv, index=False, encoding="utf-8")
     test_df.to_csv(test_csv, index=False, encoding="utf-8")
 
-    print(f"CSV files created successfully:")
-    print(f"  - Training set: '{train_csv}' with {len(train_df)} records.")
-    print(f"  - Testing set: '{test_csv}' with {len(test_df)} records.")
+    logger.success(f"CSV files created successfully:")
+    logger.success(f"  - Training set: '{train_csv}' with {len(train_df)} records.")
+    logger.success(f"  - Testing set: '{test_csv}' with {len(test_df)} records.")
 
 
 if __name__ == "__main__":
