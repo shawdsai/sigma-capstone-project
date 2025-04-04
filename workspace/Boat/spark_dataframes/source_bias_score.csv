@@ -1,0 +1,75 @@
+,domain,source,count,source_encoded,source_bias_score
+0,aljazeera,Al Jazeera,104,4.0,0.5
+1,allsides,National Review,3,108.0,1.5
+2,apnews,Associated Press,235,14.0,0.0
+3,axios,Axios,62,15.0,0.5
+4,bbc,BBC News,603,16.0,1.0
+5,bloomberg,Bloomberg,136,21.0,0.5
+6,bostonglobe,The Boston Globe,17,152.0,0.0
+7,breitbart,Breitbart News,300,22.0,2.0
+8,businessinsider,Business Insider,59,25.0,0.5
+9,buzzfeednews,BuzzFeed News,44,26.0,0.0
+10,cbn,CBN,334,27.0,2.0
+11,cbsnews,CBS News,128,28.0,0.5
+12,cnbc,CNBC,85,29.0,1.0
+13,cnn,CNN (Web News),2230,30.0,0.5
+14,csmonitor,Christian Science Monitor,1044,38.0,1.0
+15,dailycaller,The Daily Caller,180,153.0,2.0
+16,dailykos,Daily Kos,103,42.0,0.0
+17,dailymail,Daily Mail,38,43.0,2.0
+18,dailywire,The Daily Wire,90,154.0,2.0
+19,democracynow,Democracy Now,63,48.0,0.0
+20,economist,The Economist,23,155.0,0.5
+21,fivethirtyeight,FiveThirtyEight,72,53.0,1.0
+22,foxbusiness,Fox Online News,24,57.0,2.0
+23,foxnews,Fox Online News,1584,57.0,2.0
+24,freebeacon,Washington Free Beacon,30,185.0,2.0
+25,go,ABC News,187,0.0,0.5
+26,hotair,HotAir,59,65.0,1.5
+27,ibtimes,International Business Times,36,68.0,1.0
+28,jacobinmag,Jacobin,20,70.0,0.0
+29,marketwatch,MarketWatch,84,89.0,1.0
+30,mediamatters,Media Matters,87,92.0,0.0
+31,motherjones,Mother Jones,86,102.0,0.0
+32,nationalreview,National Review,809,108.0,1.5
+33,nbcnews,NBC News (Online),34,104.0,0.5
+34,newsbusters,NewsBusters,31,117.0,2.0
+35,newsmax,Newsmax,462,118.0,2.0
+36,newyorker,The New Yorker,17,164.0,0.0
+37,npr,NPR Online News,1612,107.0,0.5
+38,nymag,New York Magazine,36,109.0,0.0
+39,nypost,New York Post,133,110.0,1.5
+40,nytimes,New York Times - News,1115,114.0,0.5
+41,pewresearch,Pew Research Center,25,127.0,1.0
+42,politico,Politico,1996,130.0,0.5
+43,propublica,ProPublica,51,131.0,0.5
+44,realclearpolitics,RealClearPolitics,34,134.0,1.5
+45,reason,Reason,384,135.0,1.0
+46,reuters,Reuters,650,137.0,1.0
+47,salon,Salon,466,144.0,0.0
+48,scientificamerican,Scientific American,31,145.0,0.5
+49,slate,Slate,117,148.0,0.0
+50,spectator,American Spectator,184,8.0,2.0
+51,suntimes,Chicago Sun-Times,62,36.0,0.5
+52,theatlantic,The Atlantic,147,151.0,0.0
+53,theblaze,TheBlaze.com,163,167.0,2.0
+54,thedailybeast,Daily Beast,195,41.0,0.0
+55,theepochtimes,The Epoch Times,29,156.0,1.5
+56,theflipside,The Flip Side,185,157.0,1.0
+57,theguardian,The Guardian,440,158.0,0.0
+58,thehill,The Hill,1084,159.0,1.0
+59,theintercept,The Intercept,36,161.0,0.0
+60,themarshallproject,The Marshall Project,18,162.0,1.0
+61,thenation,The Nation,26,163.0,0.0
+62,theweek,The Week - News,97,165.0,0.5
+63,thinkprogress,ThinkProgress,29,168.0,0.0
+64,time,Time Magazine,54,171.0,0.5
+65,townhall,Townhall,1021,174.0,2.0
+66,usatoday,USA TODAY,1441,176.0,0.5
+67,vanityfair,Vanity Fair,126,177.0,0.5
+68,vice,Vice,53,178.0,0.0
+69,vox,Vox,1159,180.0,0.0
+70,washingtonpost,Washington Post,87,186.0,0.5
+71,washingtontimes,Washington Times,2326,187.0,1.5
+72,wsj,Wall Street Journal - News,277,182.0,1.0
+73,yahoo,Yahoo! The 360,57,190.0,1.0
