@@ -27,3 +27,13 @@ Install them by running:
 ```bash
 pip install pre-commit
 pre-commit install
+
+```
+## 💻 Running
+
+To run a benchmark pipeline notebook, please follow the following steps:
+- Prepare an environment of your choice to host the notebook (`benchmark_pipeline.ipynb`), preferably Google Colab with a GPU instance.
+- Run the entire `Setup` section.
+- Once completed, add a URL of a news article inside the `url_list` list.
+- Run the `Pipeline` section and see the prediction at the end.
+- Run an optional `Evaluation` section to see visualizations and evaluation metrics.
