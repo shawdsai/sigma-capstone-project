@@ -27,3 +27,5 @@ Install them by running:
 ```bash
 pip install pre-commit
 pre-commit install
+
+```
