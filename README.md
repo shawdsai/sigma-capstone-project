@@ -10,6 +10,18 @@ This repository contains datasets, scripts, and configurations for the **Sigma C
 - **`data/`**  
   Contains datasets from different sources, including processed and raw data used for analysis.
 
+- **`models/`**  
+  Contains checkpoints of our trained models, used for inference and benchmarking within the pipeline.
+
+- **`workspace/`**  
+  Contains development work and experimentation on various models by team members:
+  - `workspace/Boat`
+  - `workspace/Nueng`
+  - `workspace/Shaw`
+
+- **`requirements.txt`**  
+  Lists all necessary libraries to run our notebooks.
+
 - **`.github/workflows/`**  
   Contains GitHub Actions workflows for automation, linting, and pre-commit hooks.
 
@@ -27,13 +39,19 @@ Install them by running:
 ```bash
 pip install pre-commit
 pre-commit install
-
 ```
+
 ## 💻 Running
 
-To run a benchmark pipeline notebook, please follow the following steps:
-- Prepare an environment of your choice to host the notebook (`benchmark_pipeline.ipynb`), preferably Google Colab with a GPU instance.
-- Run the entire `Setup` section.
-- Once completed, add a URL of a news article inside the `url_list` list.
-- Run the `Pipeline` section and see the prediction at the end.
-- Run an optional `Evaluation` section to see visualizations and evaluation metrics.
+To run the benchmarking pipeline, you can use either of the following notebooks:
+- `workspace/Boat/benchmark_pipeline.ipynb`
+- `workspace/Shaw/BenchmarkPipeline.ipynb`
+
+These notebooks benchmark our **Political Bias Prediction on News Articles**, using real-world data from the **2024 U.S. Election**, gathered from various news sources.
+
+### Steps:
+1. Prepare an environment of your choice to host the notebook (preferably Google Colab with a GPU instance).
+2. Run the entire `Setup` section.
+3. Add a news article URL inside the `url_list`.
+4. Run the `Pipeline` section to get predictions.
+5. (Optional) Run the `Evaluation` section to see visualizations and performance metrics.
