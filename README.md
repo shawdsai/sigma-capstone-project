@@ -55,3 +55,5 @@ These notebooks benchmark our **Political Bias Prediction on News Articles**, us
 3. Add a news article URL inside the `url_list`.
 4. Run the `Pipeline` section to get predictions.
 5. (Optional) Run the `Evaluation` section to see visualizations and performance metrics.
+
+Benchmark data is available in BenchmarkScore.xlsx.
