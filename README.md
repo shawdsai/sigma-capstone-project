@@ -46,6 +46,7 @@ pre-commit install
 To run the benchmarking pipeline, you can use either of the following notebooks:
 - `workspace/Boat/benchmark_pipeline.ipynb`
 - `workspace/Shaw/BenchmarkPipeline.ipynb`
+- `workspace/Nueng/Benchmark_Pipeline_Nueng.ipynb`
 
 These notebooks benchmark our **Political Bias Prediction on News Articles**, using real-world data from the **2024 U.S. Election**, gathered from various news sources.
 
